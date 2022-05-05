@@ -5,16 +5,24 @@
     <body style="margin: 0px 0px 0px 126.5px; overflow: hidden;">
         <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
-    <!-- 画像をプリロード -->
-    <img id="yurina" src="yurina_effect.png">
-    <a-scene embedded="" arjs="trackingMethod:best; debugUIEnabled:false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-      <a-marker type="pattern" url="pattern-ZgHSa0cfKNsgIfl1651789510_1651789554.patt">
-        <a-image src="yurina" width="2" height="2" rotation="-0 0 0"></a-image>
+        
+    <a-assets>
+      <img id="yurina" src="yurina_effect.png" />
+    </a-assets>
+
+    <!-- マーカーのタグの中に表示させたいオブジェクトをマークアップする -->
+    <a-marker type='pattern' url='pattern-ZgHSa0cfKNsgIfl1651789510_1651789554.patt'>
+      <a-plane
+        position="0 .75 0"
+        rotation="0 0 0"
+        width="1.75"
+        material="src: #yurina;">
+      </a-plane>
     </a-marker>
-    <a-entity camera="" position="" rotation="" scale="" visible=""></a-entity>
-    <canvas class="a-canvas" data-aframe-canvas="true"></canvas>
-    <a-entity light="" data-aframe-default-light="" aframe-injected="" position="" rotation="" scale="" visible=""></a-entity>
-    <a-entity light="" position="" data-aframe-default-light="" aframe-injected="" rotation="" scale="" visible=""></a-entity>
+    <a-entity camera></a-entity>
   </a-scene>
 </body>
 </html>
+    
+    
+    
