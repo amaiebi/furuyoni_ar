@@ -3,17 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-        <a-scene mindar-image="imageTargetSrc: ./tokoyuri.mind; maxTrack: 2" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-scene mindar-image="imageTargetSrc: ./tokoyuri.mind; maxTrack: 2" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="false" device-orientation-permission-ui="false">
       <a-assets>
         <img id="yurina" src="./yurina_effect.png" />
         <img id="tokoyo" src="./tokoyo_effect.png" />
       </a-assets>
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-camera position="0 0 0" look-controls="enabled"></a-camera>
           
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#yurina" position="0 1 0" height="2" width="1.2" rotation="100 0 0"></a-plane>
