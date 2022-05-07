@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-        <a-scene mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 2 " color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-scene mindar-image="imageTargetSrc: ./tokoyuri.mind; maxTrack: 2 " color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <img id="yurina" src="./yurina_effect.png" />
         <img id="tokoyo" src="./tokoyo_effect.png" />
@@ -23,7 +23,7 @@
          align="center" position="0.8 -2 0" color="black"></a-text>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane src="#yurina" position="0 1 0" height="2" width="1.5" rotation="100 0 0" animation="property: position; to:0 1 0.1; loop: true; dur: 650; easing: linear"></a-plane>
+        <a-plane src="#tokoyo" position="0 1 0" height="2" width="1.28" rotation="100 0 0" animation="property: position; to:0 1 0.1; loop: true; dur: 650; easing: linear"></a-plane>
       </a-entity>
     </a-scene>
   </body>
