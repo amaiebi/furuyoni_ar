@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
@@ -14,14 +14,21 @@
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      
+       <a-text
+        value="Furuyoni Commons/BakaFire,TOKIAME"
+        negate="false"
+        scale="2 2 1"
+        position="0 0 0"
+        color="red">
+      </a-text>
           
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane src="#yurina" position="0 1 0" height="2" width="1.5" rotation="100 0 0" animation="property: position; to:0 1 0.2; loop: true; dur: 600; easing: linear"></a-plane>
+        <a-plane src="#yurina" position="0 1 0" height="2" width="1.5" rotation="100 0 0" animation="property: position; to:0 1 0.1; loop: true; dur: 600; easing: linear"></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
         <a-plane src="#tokoyo" position="0 1 0" height="2" width="1.28" rotation="100 0 0" animation="property: position; to:0 1 0.1; loop: true; dur: 600; easing: linear"></a-plane>
       </a-entity>
     </a-scene>
-    <footer>ふるよにコモンズ/BakaFire,TOKIAME</footer>
   </body>
 </html>
